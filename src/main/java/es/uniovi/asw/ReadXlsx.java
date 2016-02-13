@@ -14,18 +14,13 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ReadXlsx {
-	private String fileName;
+public class ReadXlsx implements VoterFileReader{
 	private XSSFRow row;
 	private List<Voter> voters = new ArrayList<Voter>();
 	private PasswordGenerator paswdGen = new PasswordGenerator();
 
-	public ReadXlsx(String fileName) {
-		super();
-		this.fileName = fileName;
-	}
 	
-	public void read() throws IOException{
+	public void read(String fileName) throws IOException{
 		FileInputStream fis = new FileInputStream(new File(fileName));
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet spreadsheet = workbook.getSheetAt(0);
