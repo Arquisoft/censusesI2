@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -15,6 +17,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ReadXlsx {
 	private String fileName;
 	private XSSFRow row;
+	private List<Voter> voters = new ArrayList<Voter>();
+	private PasswordGenerator paswdGen = new PasswordGenerator();
 
 	public ReadXlsx(String fileName) {
 		super();
@@ -29,22 +33,17 @@ public class ReadXlsx {
         while (rowIterator.hasNext()) 
         {
         	row = (XSSFRow) rowIterator.next();
-            Iterator < Cell > cellIterator = row.cellIterator();
-            while ( cellIterator.hasNext()) 
-            {
-               Cell cell = cellIterator.next();
-               switch (cell.getCellType()) 
-               {
-                  case Cell.CELL_TYPE_NUMERIC:
-                  //TODO
-                  break;
-                  case Cell.CELL_TYPE_STRING:
-                  //TODO
-                  break;
-               }
-            }
+        	String name=row.getCell(0).getStringCellValue();
+        	String email=row.getCell(1).getStringCellValue();
+        	String nif=row.getCell(2).getStringCellValue();
+        	String pollStCode=row.getCell(3).getStringCellValue();
+            voters.add(new Voter(name,email,nif,pollStCode,paswdGen.getNewPassword()));
         }
 
+	}
+	
+	public List<Voter> getVoters() {
+		return voters;
 	}
 
 }
