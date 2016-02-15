@@ -1,4 +1,4 @@
-package es.uniovi.asw;
+package es.uniovi.parser;
 
 import java.io.File;
 import java.io.FileInputStream;
