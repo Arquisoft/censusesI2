@@ -10,10 +10,10 @@ import java.util.logging.Logger;
  */
 public class LoadUsers {
 
-	public static void main(String... args) {
-		LoadUsers runner = new LoadUsers();
-		runner.run(args);
-	}
+//	public static void main(String... args) {
+//		LoadUsers runner = new LoadUsers();
+//		runner.run(args);
+//	}
 
 	// TODO
 	void run(String... args) {
