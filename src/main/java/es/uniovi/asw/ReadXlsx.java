@@ -20,25 +20,22 @@ public class ReadXlsx implements VoterFileReader{
 	private PasswordGenerator paswdGen = new PasswordGenerator();
 
 	
-	public void read(String fileName) throws IOException{
+	public List<Voter> read(String fileName) throws IOException{
 		FileInputStream fis = new FileInputStream(new File(fileName));
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet spreadsheet = workbook.getSheetAt(0);
         Iterator < Row > rowIterator = spreadsheet.iterator();
+        row = (XSSFRow) rowIterator.next();
         while (rowIterator.hasNext()) 
         {
         	row = (XSSFRow) rowIterator.next();
         	String name=row.getCell(0).getStringCellValue();
-        	String email=row.getCell(1).getStringCellValue();
-        	String nif=row.getCell(2).getStringCellValue();
-        	String pollStCode=row.getCell(3).getStringCellValue();
+        	String nif=row.getCell(1).getStringCellValue();
+        	String email=row.getCell(2).getStringCellValue();
+        	int pollStCode=(int) row.getCell(3).getNumericCellValue();
             voters.add(new Voter(name,email,nif,pollStCode,paswdGen.getNewPassword()));
         }
-
-	}
-	
-	public List<Voter> getVoters() {
-		return voters;
+        return voters;
 	}
 
 }
