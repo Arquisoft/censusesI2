@@ -10,8 +10,8 @@ Changed at 13:23h
 AUTHORS
 =======
 
-Santiago Casero
-Alejandro Pazos
-Daniel Ortea
+* Santiago Casero
+* Alejandro Pazos
+* Daniel Ortea
 
 
