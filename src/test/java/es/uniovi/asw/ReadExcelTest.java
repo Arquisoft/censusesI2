@@ -7,6 +7,9 @@ import java.util.List;
 
 import org.junit.Test;
 
+import es.uniovi.parser.ReadXlsx;
+import es.uniovi.parser.Voter;
+
 import org.junit.Assert;
 
 public class ReadExcelTest {
