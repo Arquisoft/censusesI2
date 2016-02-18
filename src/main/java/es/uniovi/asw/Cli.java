@@ -34,7 +34,7 @@ public class Cli {
 
 		options.addOption("v", "var", true, "Here you can set parameter .");
 		
-		options.addOption("p", "parse", true, "Name of the exel file .");
+		options.addOption("p", "parse", true, "Name of the Excel file .");
 
 	}
 
@@ -62,7 +62,7 @@ public class Cli {
 			}
 			} else {
 
-				log.log(Level.SEVERE, "MIssing v option");
+				log.log(Level.SEVERE, "Missing v option");
 
 				help();
 
