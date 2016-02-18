@@ -16,6 +16,8 @@ import org.apache.commons.cli.Options;
 
 import org.apache.commons.cli.ParseException;
 
+import es.uniovi.parser.*;
+
 public class Cli {
 
 	private static final Logger log = Logger.getLogger(Cli.class.getName());
@@ -56,7 +58,7 @@ public class Cli {
 
 				// Whatever you want to do with the setting goes here
 			if (cmd.hasOption("p"))	{
-				
+				parser(cmd.getOptionValue("p"), new ReadXlsx());
 			}
 			} else {
 
@@ -85,6 +87,12 @@ public class Cli {
 		formater.printHelp("Main", options);
 
 		System.exit(0);
+	}
+	
+	private void parser(String filename, VoterFileReader reader){
+		Parser parser = new Parser();
+		parser.ReadFile(filename, reader);
+	
 	}
 
 }
