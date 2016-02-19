@@ -55,12 +55,12 @@ public class Cli {
 			if (cmd.hasOption("v")) {
 
 				log.log(Level.INFO, "Using cli argument -v=" + cmd.getOptionValue("v"));
-
+			}
 				// Whatever you want to do with the setting goes here
 			if (cmd.hasOption("p"))	{
 				parser(cmd.getOptionValue("p"), new ReadXlsx());
 			}
-			} else {
+			else {
 
 				log.log(Level.SEVERE, "Missing v option");
 
