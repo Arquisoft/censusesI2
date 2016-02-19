@@ -34,7 +34,7 @@ public class Cli {
 
 		options.addOption("v", "var", true, "Here you can set parameter .");
 		
-		options.addOption("p", "parse", true, "Name of the exel file .");
+		options.addOption("p", "parse", true, "Name of the Excel file .");
 
 	}
 
@@ -55,14 +55,14 @@ public class Cli {
 			if (cmd.hasOption("v")) {
 
 				log.log(Level.INFO, "Using cli argument -v=" + cmd.getOptionValue("v"));
-
+			}
 				// Whatever you want to do with the setting goes here
 			if (cmd.hasOption("p"))	{
 				parser(cmd.getOptionValue("p"), new ReadXlsx());
 			}
-			} else {
+			else {
 
-				log.log(Level.SEVERE, "MIssing v option");
+				log.log(Level.SEVERE, "Missing v option");
 
 				help();
 
