@@ -11,7 +11,11 @@ public class Parser {
 		try {
 			List<Voter> voters = reader.read(file);
 			InsertVoters iv = new InsertVoters();
-			iv.insert(voters);
+			voters = iv.insert(voters);
+			for (Voter voter :
+					voters) {
+				System.out.printf("Voter %s with nif %s and email %s votes in polling station %d\n", voter.getName(), voter.getNif(), voter.getEmail(), voter.getPollStCode());
+			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

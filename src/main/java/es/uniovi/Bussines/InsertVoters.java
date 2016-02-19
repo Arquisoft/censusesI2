@@ -13,19 +13,20 @@ import java.util.List;
  */
 public class InsertVoters {
 
-    public void insert(List<Voter> voters) {
+    public List<Voter> insert(List<Voter> voters) {
         Connection conn = null;
         try {
             conn = Jdbc.getConnection();
             conn.setAutoCommit(false);
             VotersGateway vg = new VotersGateway();
             vg.setConnection(conn);
-            vg.insertVoters(voters);
+            voters = vg.insertVoters(voters);
             conn.commit();
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
             Jdbc.close(conn);
+            return voters;
         }
     }
 }
