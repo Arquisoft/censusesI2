@@ -6,6 +6,7 @@ import es.uniovi.util.Jdbc;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,24 +24,34 @@ public class VotersGateway {
         this.conn = conn;
     }
 
-    public void insertVoters(List<Voter> voters) {
+    public List<Voter> insertVoters(List<Voter> voters) {
         PreparedStatement pst = null;
+        List<Voter> votersAdded = new ArrayList<>();
         try{
-            pst = conn.prepareStatement(INSERT_VOTERS);
             for (Voter voter :
                     voters) {
-                pst.setString(1,voter.getName());
-                pst.setString(2,voter.getEmail());
-                pst.setString(3,voter.getNif());
-                pst.setInt(4,voter.getPollStCode());
-                pst.executeUpdate();
+                pst = conn.prepareStatement(INSERT_VOTERS);
+                try{
+                    pst.setString(1,voter.getName());
+                    pst.setString(2,voter.getEmail());
+                    pst.setString(3,voter.getNif());
+                    pst.setInt(4,voter.getPollStCode());
+                    pst.executeUpdate();
+                    votersAdded.add(voter);
+                }catch (SQLException c){
+                    System.out.println(c.getErrorCode());
+                    if(c.getErrorCode() == 0){
+                    }
+                }
             }
 
         }catch (SQLException e){
+            System.out.println(e.getErrorCode());
+            System.out.println(e.getSQLState());
             e.printStackTrace();
         }finally {
             Jdbc.close(pst);
+            return votersAdded;
         }
-
     }
 }
