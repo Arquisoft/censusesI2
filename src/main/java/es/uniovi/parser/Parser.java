@@ -20,7 +20,5 @@ public class Parser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//update database...(reader.getVoters())
 	}
-	//public update database...
 }
