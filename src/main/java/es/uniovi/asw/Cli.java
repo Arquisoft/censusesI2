@@ -35,6 +35,8 @@ public class Cli {
 		options.addOption("v", "var", true, "Here you can set parameter .");
 		
 		options.addOption("p", "parse", true, "Name of the Excel file .");
+		
+		options.addOption("test", "test", true, "TextTest");
 
 	}
 
@@ -59,6 +61,9 @@ public class Cli {
 				// Whatever you want to do with the setting goes here
 			if (cmd.hasOption("p"))	{
 				parser(cmd.getOptionValue("p"), new ReadXlsx());
+			}
+			if (cmd.hasOption("test")){
+				test(cmd.getOptionValue("test"));
 			}
 			else {
 
@@ -92,7 +97,10 @@ public class Cli {
 	private void parser(String filename, VoterFileReader reader){
 		Parser parser = new Parser();
 		parser.ReadFile(filename, reader);
+	}
 	
+	private void test(String text){
+		System.out.println("The test is correct.");
 	}
 
 }
