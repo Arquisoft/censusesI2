@@ -6,6 +6,6 @@ import es.uniovi.parser.Voter;
 
 public interface WriteReport {
 
-	public void write(Voter voter, SQLException e);
+	public void write(Voter voter, Exception e);
 	
 }

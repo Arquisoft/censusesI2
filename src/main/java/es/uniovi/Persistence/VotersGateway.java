@@ -1,11 +1,13 @@
 package es.uniovi.Persistence;
 
+import es.uniovi.ReportWriter.WReportP;
 import es.uniovi.parser.Voter;
 import es.uniovi.util.Jdbc;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,32 +26,35 @@ public class VotersGateway {
         this.conn = conn;
     }
 
-    public List<Voter> insertVoters(List<Voter> voters) {
+    public List<Voter> insertVoters(List<Voter> voters, WReportP reportWriter) {
         PreparedStatement pst = null;
         List<Voter> votersAdded = new ArrayList<Voter>();
-        try{
+        try {
             for (Voter voter :
                     voters) {
                 pst = conn.prepareStatement(INSERT_VOTERS);
-                try{
-                    pst.setString(1,voter.getName());
-                    pst.setString(2,voter.getEmail());
-                    pst.setString(3,voter.getNif());
-                    pst.setInt(4,voter.getPollStCode());
+                try {
+                    pst.setString(1, voter.getName());
+                    pst.setString(2, voter.getEmail());
+                    pst.setString(3, voter.getNif());
+                    pst.setInt(4, voter.getPollStCode());
                     pst.executeUpdate();
                     votersAdded.add(voter);
-                }catch (SQLException c){
+                } catch (SQLException c) {
                     System.out.println(c.getErrorCode());
-                    if(c.getErrorCode() == 0){
+                    if (c.getErrorCode() == 0) {
+                        reportWriter.write(voter, new SQLException("Voter's NIF already in database"));
+                    } else {
+                        System.out.println(c.getErrorCode());
                     }
                 }
             }
 
-        }catch (SQLException e){
+        } catch (SQLException e) {
             System.out.println(e.getErrorCode());
             System.out.println(e.getSQLState());
             e.printStackTrace();
-        }finally {
+        } finally {
             Jdbc.close(pst);
             return votersAdded;
         }

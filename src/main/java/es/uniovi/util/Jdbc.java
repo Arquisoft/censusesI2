@@ -17,7 +17,7 @@ public class Jdbc {
 /* Configuration for Hsqldb
 */	
 	private static String DRIVER = "org.sqlite.JDBC";
-	private static String URL = "jdbc:sqlite:C:\\sqlite\\asw.db";
+	private static String URL = "jdbc:sqlite:asw.db";
 	
 	static {
 		try {

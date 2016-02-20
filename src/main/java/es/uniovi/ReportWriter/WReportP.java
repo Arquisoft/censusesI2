@@ -11,7 +11,7 @@ import es.uniovi.parser.Voter;
 
 public class WReportP implements WriteReport{
 
-	public void write(Voter voter, SQLException sql) {
+	public void write(Voter voter, Exception sql) {
 		BufferedWriter writer = null;
 		try {
             //create a temporary file
