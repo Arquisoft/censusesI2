@@ -26,7 +26,7 @@ public class VotersGateway {
 
     public List<Voter> insertVoters(List<Voter> voters) {
         PreparedStatement pst = null;
-        List<Voter> votersAdded = new ArrayList<>();
+        List<Voter> votersAdded = new ArrayList<Voter>();
         try{
             for (Voter voter :
                     voters) {

@@ -4,7 +4,7 @@ import java.util.logging.Level;
 
 import java.util.logging.Logger;
 
-import org.apache.commons.cli.BasicParser;
+import org.apache.commons.cli.DefaultParser;
 
 import org.apache.commons.cli.CommandLine;
 
@@ -40,7 +40,7 @@ public class Cli {
 
 	public void parse() {
 
-		CommandLineParser parser = new BasicParser();
+		CommandLineParser parser = new DefaultParser();
 
 		CommandLine cmd = null;
 
@@ -62,7 +62,7 @@ public class Cli {
 			}
 			else {
 
-				log.log(Level.SEVERE, "Missing v option");
+				log.log(Level.SEVERE, "Missing p option");
 
 				help();
 
