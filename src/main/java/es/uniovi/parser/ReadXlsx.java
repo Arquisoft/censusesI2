@@ -35,6 +35,7 @@ public class ReadXlsx implements VoterFileReader{
         	int pollStCode=(int) row.getCell(3).getNumericCellValue();
             voters.add(new Voter(name,email,nif,pollStCode,paswdGen.getNewPassword()));
         }
+        workbook.close();
         return voters;
 	}
 

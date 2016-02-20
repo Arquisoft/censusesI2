@@ -16,7 +16,7 @@ public class WReportP implements WriteReport{
 		try {
             //create a temporary file
             String timeLog = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-            File logFile = new File(timeLog);
+            File logFile = new File("./reports/"+timeLog+".txt");
 
             // This will output the full path where the file will be written to...
             System.out.println(logFile.getCanonicalPath());

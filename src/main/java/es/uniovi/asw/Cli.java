@@ -65,13 +65,6 @@ public class Cli {
 			if (cmd.hasOption("test")){
 				test(cmd.getOptionValue("test"));
 			}
-			else {
-
-				log.log(Level.SEVERE, "Missing p option");
-
-				help();
-
-			}
 
 		} catch (ParseException e) {
 
