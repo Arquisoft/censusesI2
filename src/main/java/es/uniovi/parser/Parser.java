@@ -12,9 +12,10 @@ public class Parser {
 			List<Voter> voters = reader.read(file);
 			InsertVoters iv = new InsertVoters();
 			voters = iv.insert(voters);
+			LetterWriter writer= new LetterWriter();
 			for (Voter voter :
 					voters) {
-				LetterWriter.writeLetter(voter);
+				writer.writeLetter(voter);
 			}
 		} catch (IOException e) {
 			System.out.println("Error trying to read the file: " + e.getMessage());

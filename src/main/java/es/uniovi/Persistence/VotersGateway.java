@@ -41,7 +41,6 @@ public class VotersGateway {
                     pst.executeUpdate();
                     votersAdded.add(voter);
                 } catch (SQLException c) {
-                    System.out.println(c.getErrorCode());
                     if (c.getErrorCode() == 0) {
                         reportWriter.write(voter, new SQLException("Voter's NIF already in database"));
                     } else {
