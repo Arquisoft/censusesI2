@@ -51,5 +51,14 @@ public class WReportP implements WriteReport {
             }
         }
     }
+    
+    public String getReportDirectory() {
+		try {
+			return logFile.getCanonicalPath();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return "";
+	}
 
 }

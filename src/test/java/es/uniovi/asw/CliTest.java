@@ -1,11 +1,8 @@
 package es.uniovi.asw;
 
-import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import es.uniovi.parser.Parser;
-import es.uniovi.parser.ReadXlsx;
 
 public class CliTest {
 	

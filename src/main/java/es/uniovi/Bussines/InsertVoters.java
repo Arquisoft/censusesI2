@@ -28,14 +28,14 @@ public class InsertVoters {
 			conn.commit();
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			Jdbc.close(conn);
 			return validVoters;
 		}
 	}
 
 	private List<Voter> verifyData(List<Voter> voters) {
-		List<Voter> validVoters = new ArrayList<>();
+		List<Voter> validVoters = new ArrayList<Voter>();
 		boolean valid;
 		for(Voter voter : voters){
 			valid = true;

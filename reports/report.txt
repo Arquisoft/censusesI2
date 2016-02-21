@@ -1,0 +1,4 @@
+[20160221_172555]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160221_172652]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160221_172708]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160221_173422]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test

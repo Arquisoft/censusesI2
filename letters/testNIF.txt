@@ -1,0 +1,4 @@
+You have been correctly inserted into our system. You may now access our web service using the following information:
+
+	login:testemail
+	password:testPassword
