@@ -1,6 +1,6 @@
 package es.uniovi.Bussines;
 
-import es.uniovi.Persistence.VotersGateway;
+import es.uniovi.DBUpdate.VotersGateway;
 import es.uniovi.ReportWriter.WReportP;
 import es.uniovi.parser.Voter;
 import es.uniovi.util.FormFormat;

@@ -8,14 +8,6 @@ import java.sql.Statement;
 
 public class Jdbc {
 
-/*  Configuration for Oracle 
-	private static String DRIVER = "oracle.jdbc.driver.OracleDriver";
-	private static String URL = "jdbc:oracle:thin:@156.35.94.99:1521:DESA";
-	private static String USER = "";
-	private static String PASS = "";
-*/
-/* Configuration for Hsqldb
-*/	
 	private static String DRIVER = "org.sqlite.JDBC";
 	private static String URL = "jdbc:sqlite:C:\\sqlite\\asw.db";
 	

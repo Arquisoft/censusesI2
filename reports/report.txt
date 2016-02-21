@@ -2,3 +2,7 @@
 [20160221_172652]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
 [20160221_172708]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
 [20160221_173422]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160221_225820]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160221_225837]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160221_233052]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_000106]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test

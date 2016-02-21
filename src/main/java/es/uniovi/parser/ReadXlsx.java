@@ -26,12 +26,16 @@ public class ReadXlsx implements VoterFileReader{
         row = (XSSFRow) rowIterator.next();
         while (rowIterator.hasNext()) 
         {
-        	row = (XSSFRow) rowIterator.next();
-        	String name=row.getCell(0).getStringCellValue();
-        	String nif=row.getCell(1).getStringCellValue();
-        	String email=row.getCell(2).getStringCellValue();
-        	int pollStCode=(int) row.getCell(3).getNumericCellValue();
-            voters.add(new Voter(name,email,nif,pollStCode,paswdGen.getNewPassword()));
+			try {
+				row = (XSSFRow) rowIterator.next();
+				String name = row.getCell(0).getStringCellValue();
+				String nif = row.getCell(1).getStringCellValue();
+				String email = row.getCell(2).getStringCellValue();
+				int pollStCode = (int) row.getCell(3).getNumericCellValue();
+				voters.add(new Voter(name, email, nif, pollStCode, paswdGen.getNewPassword()));
+			}catch (IllegalStateException e){
+				System.out.println("Error in line: "+ row.getRowNum() + "\t" + e.getMessage());
+			}
         }
         workbook.close();
         return voters;

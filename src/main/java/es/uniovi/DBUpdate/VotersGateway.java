@@ -1,8 +1,9 @@
-package es.uniovi.Persistence;
+package es.uniovi.DBUpdate;
 
 import es.uniovi.ReportWriter.WReportP;
 import es.uniovi.parser.Voter;
 import es.uniovi.util.Jdbc;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,8 +16,8 @@ import java.util.List;
  */
 public class VotersGateway {
 
-    private static final String INSERT_VOTERS = "INSERT INTO voters(name,email,nif,polling_station_number)" +
-            " VALUES(?,?,?,?)";
+    private static final String INSERT_VOTERS = "INSERT INTO voters(name,email,nif,polling_station_number,password)" +
+            " VALUES(?,?,?,?,?)";
 
     private Connection conn;
 
@@ -37,6 +38,7 @@ public class VotersGateway {
                     pst.setString(2, voter.getEmail());
                     pst.setString(3, voter.getNif());
                     pst.setInt(4, voter.getPollStCode());
+                    pst.setString(5, encryptPass(voter));
                     pst.executeUpdate();
                     votersAdded.add(voter);
                 } catch (SQLException c) {
@@ -45,6 +47,8 @@ public class VotersGateway {
                     } else {
                         System.out.println(c.getErrorCode());
                     }
+                } catch (RuntimeException r) {
+                    reportWriter.write(voter, r);
                 }
             }
 
@@ -56,5 +60,19 @@ public class VotersGateway {
             Jdbc.close(pst);
             return votersAdded;
         }
+    }
+
+    private String encryptPass(Voter voter){
+        // Hash a password for the first time
+        String hashed = BCrypt.hashpw(voter.getPassword(), BCrypt.gensalt());
+
+    /*
+        Check that an unencrypted password matches one that has
+        previously been hashed
+    */
+        if (!BCrypt.checkpw(voter.getPassword(), hashed))
+            throw new RuntimeException("The password failed the encryption process");
+
+        return hashed;
     }
 }
