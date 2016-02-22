@@ -27,10 +27,11 @@ COMMAND DETAILS
 When running the compiled program we have the following commands:
 
  -h,--help               shows help (This same information).
- -ic,--input type csv    Declares the type of input file as csv (Default
-                         is xlsx) .
- -od,--output type doc   Type of the output letters as doc (Default is
-                         txt) .
+ 
+ -ic,--input type csv    Declares the type of input file as csv (Default is xlsx) .
+ 
+ -od,--output type doc   Type of the output letters as doc (Default is txt) .
+ 
  -p,--parse <arg>        Parses the "arg" file .
  
  -test,--test <arg>      TextTest (prints in screen the test message, used mainly for testing puroposes)
