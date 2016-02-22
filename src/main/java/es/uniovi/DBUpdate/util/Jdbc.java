@@ -9,8 +9,8 @@ import java.sql.Statement;
 public class Jdbc {
 
 	private static String DRIVER = "org.sqlite.JDBC";
-	private static String URL = "jdbc:sqlite:C:\\sqlite\\asw.db";
-	
+	private static String URL= "jdbc:sqlite:../sqlite/asw.db";
+
 	static {
 		try {
 			Class.forName( DRIVER );
