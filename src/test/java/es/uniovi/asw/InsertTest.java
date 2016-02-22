@@ -1,10 +1,11 @@
 package es.uniovi.asw;
 
-import es.uniovi.Bussines.InsertVoters;
+import es.uniovi.DBUpdate.Insert;
+import es.uniovi.DBUpdate.InsertP;
 import es.uniovi.DBUpdate.VotersGateway;
+import es.uniovi.DBUpdate.util.Jdbc;
 import es.uniovi.ReportWriter.WReportP;
 import es.uniovi.parser.Voter;
-import es.uniovi.util.Jdbc;
 import org.junit.*;
 
 import java.sql.*;
@@ -20,7 +21,7 @@ public class InsertTest {
     Connection conn = null;
     @Before
     public void setUp(){
-        voters = new ArrayList<>();
+        voters = new ArrayList<Voter>();
         try {
             conn = Jdbc.getConnection();
         } catch (SQLException e) {
@@ -42,7 +43,7 @@ public class InsertTest {
     @Test
     public void testInsertion(){
         voters.add(new Voter("test","aga@gmail.com","12345678T",2,"testPass"));
-        InsertVoters iv = new InsertVoters();
+        Insert iv = new InsertP();
         int numberOfVotersInDb = countVoters();
         iv.insert(voters);
         int newNumberOfVotersInDb = countVoters();
@@ -59,7 +60,7 @@ public class InsertTest {
         voters.add(new Voter("test2","2@gmail.com","12222222T",2,"test2Pass"));
         voters.add(new Voter("test3","3@gmail.com","13333333T",2,"test3Pass"));
         voters.add(new Voter("test4","4@gmail.com","14444444T",2,"test4Pass"));
-        InsertVoters iv = new InsertVoters();
+        Insert iv = new InsertP();
         int numberOfVotersInDb = countVoters();
         iv.insert(voters);
         int newNumberOfVotersInDb = countVoters();
@@ -72,7 +73,7 @@ public class InsertTest {
         voters.add(new Voter("test","aga@gmailcom","12345679T",2,"testPass"));//Wrong email, no .com,es,etc
         voters.add(new Voter("test","aga@gmail.com","1234567T",2,"testPass"));//Wrong nif, less than 8 numbers
         voters.add(new Voter("test","aga@gmail.com","12345679",2,"testPass"));//Wrong nif, no letter
-        InsertVoters iv = new InsertVoters();
+        Insert iv = new InsertP();
         int numberOfVotersInDb = countVoters();
         iv.insert(voters);
         int newNumberOfVotersInDb = countVoters();
@@ -131,7 +132,7 @@ public class InsertTest {
             e.printStackTrace();
         }finally {
             Jdbc.close(rs,stm);
-            return numberOfVoters;
         }
+        return numberOfVoters;
     }
 }

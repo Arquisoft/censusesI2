@@ -31,10 +31,12 @@ public class Cli {
 		this.args = args;
 
 		options.addOption("h", "help", false, "show help.");
-
-		options.addOption("v", "var", true, "Here you can set parameter .");
 		
 		options.addOption("p", "parse", true, "Name of the Excel file .");
+		
+		options.addOption("ic", "input type csv", false, "Declares the type of input file as csv (Default is xlsx) .");
+
+		options.addOption("od", "output type doc", false, "Type of the output letters as doc (Default is txt) .");
 		
 		options.addOption("test", "test", true, "TextTest");
 
@@ -45,31 +47,32 @@ public class Cli {
 		CommandLineParser parser = new DefaultParser();
 
 		CommandLine cmd = null;
+		
+		VoterFileReader vfr = new ReadXlsx();
+		LetterWriter lw = new LetterWriterTxt();
 
 		try {
 
 			cmd = parser.parse(options, args);
 
-			if (cmd.hasOption("h"))
-
+			if (cmd.hasOption("h")) {
 				help();
-
-			if (cmd.hasOption("v")) {
-
-				log.log(Level.INFO, "Using cli argument -v=" + cmd.getOptionValue("v"));
 			}
-				// Whatever you want to do with the setting goes here
+			if (cmd.hasOption("ic")) {
+				vfr = new ReadCsv();
+			}
+			if (cmd.hasOption("od")) {
+				lw = new LetterWriterDoc();
+			}
 			if (cmd.hasOption("p"))	{
-				parser(cmd.getOptionValue("p"), new ReadXlsx());
+				parser(cmd.getOptionValue("p"), vfr, lw);
 			}
 			if (cmd.hasOption("test")){
 				test(cmd.getOptionValue("test"));
 			}
 
 		} catch (ParseException e) {
-
 			log.log(Level.SEVERE, "Failed to parse comand line properties", e);
-
 			help();
 
 		}
@@ -87,13 +90,13 @@ public class Cli {
 		System.exit(0);
 	}
 	
-	private void parser(String filename, VoterFileReader reader){
-		Parser parser = new Parser();
-		parser.ReadFile(filename, reader);
+	private void parser(String filename, VoterFileReader reader, LetterWriter writer){
+		RCensus parser = new RCensus();
+		parser.ReadFile(filename, reader, writer);
 	}
 	
 	private void test(String text){
-		System.out.println("The test is correct.");
+		System.out.println(text +": The test is correct.");
 	}
 
 }

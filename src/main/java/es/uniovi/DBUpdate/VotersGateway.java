@@ -1,8 +1,8 @@
 package es.uniovi.DBUpdate;
 
+import es.uniovi.DBUpdate.util.Jdbc;
 import es.uniovi.ReportWriter.WReportP;
 import es.uniovi.parser.Voter;
-import es.uniovi.util.Jdbc;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.Connection;
@@ -58,8 +58,9 @@ public class VotersGateway {
             e.printStackTrace();
         } finally {
             Jdbc.close(pst);
-            return votersAdded;
         }
+
+        return votersAdded;
     }
 
     private String encryptPass(Voter voter){

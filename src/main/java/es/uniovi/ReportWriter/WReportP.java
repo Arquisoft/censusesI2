@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import es.uniovi.Bussines.VerificationException;
+import es.uniovi.DBUpdate.Bussines.VerificationException;
 import es.uniovi.parser.Voter;
 
 public class WReportP implements WriteReport {

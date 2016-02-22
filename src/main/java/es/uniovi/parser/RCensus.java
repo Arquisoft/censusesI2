@@ -1,18 +1,18 @@
 package es.uniovi.parser;
 
-import es.uniovi.Bussines.InsertVoters;
+import es.uniovi.DBUpdate.Insert;
+import es.uniovi.DBUpdate.InsertP;
 
 import java.io.IOException;
 import java.util.List;
 
-public class Parser {
+public class RCensus implements ReadCensus{
 	
-	public void ReadFile(String file, VoterFileReader reader){
+	public void ReadFile(String file, VoterFileReader reader, LetterWriter writer){
 		try {
 			List<Voter> voters = reader.read(file);
-			InsertVoters iv = new InsertVoters();
+			Insert iv = new InsertP();
 			voters = iv.insert(voters);
-			LetterWriter writer= new LetterWriter();
 			for (Voter voter :
 					voters) {
 				writer.writeLetter(voter);

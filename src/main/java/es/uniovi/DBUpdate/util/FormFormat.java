@@ -1,4 +1,4 @@
-package es.uniovi.util;
+package es.uniovi.DBUpdate.util;
 
 import java.util.regex.*;
 

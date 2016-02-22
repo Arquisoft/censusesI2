@@ -1,4 +1,4 @@
-package es.uniovi.Bussines;
+package es.uniovi.DBUpdate.Bussines;
 
 public class VerificationException extends Exception {
 
