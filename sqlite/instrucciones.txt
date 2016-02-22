@@ -1,0 +1,7 @@
+Toda la info sobre SQLite commands etc> http://www.tutorialspoint.com/sqlite/sqlite_commands.htm
+
+Copiar la carpeta sqlite(en la que estas) en C:
+Añadir (C:\sqlite) al path de windows o linux(google if necessary)
+Con el comando "sqlite3 asw.db" sin las comillas se abre la base de datos.
+Luego funciona como cualquier base normal con comandos SQL. 
+Eso si, todos los comando deben terminar en ; obliatoriamente, sino al dar enter simplemente cambia de linea.
