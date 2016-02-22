@@ -32,6 +32,7 @@ When running the compiled program we have the following commands:
  -od,--output type doc   Type of the output letters as doc (Default is
                          txt) .
  -p,--parse <arg>        Parses the "arg" file .
+ 
  -test,--test <arg>      TextTest (prints in screen the test message, used mainly for testing puroposes)
  
  
