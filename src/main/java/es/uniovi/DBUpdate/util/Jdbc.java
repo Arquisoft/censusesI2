@@ -10,6 +10,7 @@ public class Jdbc {
 
 	private static String DRIVER = "org.sqlite.JDBC";
 	private static String URL= "jdbc:sqlite:/home/travis/build/Arquisoft/censusesI2/sqlite/asw.db";
+	//private static String URL= "jdbc:sqlite:sqlite\\asw.db";
 
 	static {
 		try {
