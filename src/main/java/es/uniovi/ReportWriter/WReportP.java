@@ -48,6 +48,7 @@ public class WReportP implements WriteReport {
                 // Close the writer regardless of what happens...
                 writer.close();
             } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }

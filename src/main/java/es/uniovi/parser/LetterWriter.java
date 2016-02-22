@@ -36,6 +36,7 @@ public class LetterWriter {
 			try {
 				writer.close();
 			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 	}

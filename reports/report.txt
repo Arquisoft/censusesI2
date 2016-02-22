@@ -6,3 +6,129 @@
 [20160221_225837]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
 [20160221_233052]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
 [20160222_000106]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_000341]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_000343]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_003217]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_003247]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_003854]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_004051]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_004052]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_004712]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_004712]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_004713]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_004721]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_004722]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_004722]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_004742]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_004742]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_004742]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_005155]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_005155]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_005342]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_005343]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_005345]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_005346]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_010036]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010036]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010036]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010036]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010037]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_010037]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_010043]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010043]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010043]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010043]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010044]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_010044]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_010046]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010046]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010046]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010046]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010046]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_010047]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_010544]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010544]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010544]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010544]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010545]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_010546]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_010554]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010554]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010554]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010554]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010555]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_010555]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_010557]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010557]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010557]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010557]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010558]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_010559]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_010944]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010944]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_010944]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010944]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_010945]:Error when inserting voter: Voter [name=test1, email=1@gmail.com, nif=11111111T, pollStCode=2, password=test1Pass]	Error message: Voter's NIF already in database
+[20160222_010945]:Error when inserting voter: Voter [name=test2, email=2@gmail.com, nif=12222222T, pollStCode=2, password=test2Pass]	Error message: Voter's NIF already in database
+[20160222_010945]:Error when inserting voter: Voter [name=test3, email=3@gmail.com, nif=13333333T, pollStCode=2, password=test3Pass]	Error message: Voter's NIF already in database
+[20160222_010945]:Error when inserting voter: Voter [name=test4, email=4@gmail.com, nif=14444444T, pollStCode=2, password=test4Pass]	Error message: Voter's NIF already in database
+[20160222_010946]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_010946]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011102]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011102]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011102]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011102]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011103]:Error when inserting voter: Voter [name=test1, email=1@gmail.com, nif=11111111T, pollStCode=2, password=test1Pass]	Error message: Voter's NIF already in database
+[20160222_011103]:Error when inserting voter: Voter [name=test2, email=2@gmail.com, nif=12222222T, pollStCode=2, password=test2Pass]	Error message: Voter's NIF already in database
+[20160222_011103]:Error when inserting voter: Voter [name=test3, email=3@gmail.com, nif=13333333T, pollStCode=2, password=test3Pass]	Error message: Voter's NIF already in database
+[20160222_011104]:Error when inserting voter: Voter [name=test4, email=4@gmail.com, nif=14444444T, pollStCode=2, password=test4Pass]	Error message: Voter's NIF already in database
+[20160222_011104]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011104]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011151]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011151]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011151]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011151]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011153]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011154]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011201]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011201]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011201]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011201]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011203]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011204]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011205]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011205]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011205]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011205]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011207]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011208]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011414]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011414]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011414]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011414]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011416]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011417]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011426]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011426]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011426]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011426]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011429]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011429]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011431]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011431]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011431]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011431]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011433]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011433]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011624]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011624]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011624]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011624]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011626]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011627]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
+[20160222_011628]:Error when inserting voter: Voter [name=test, email=agagmail.com, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011628]:Error when inserting voter: Voter [name=test, email=aga@gmailcom, nif=12345679T, pollStCode=2, password=testPass]	Error message: Incorrect email format
+[20160222_011628]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=1234567T, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011628]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345679, pollStCode=2, password=testPass]	Error message: Incorrect NIF format
+[20160222_011630]:Error when inserting voter: Voter [name=test, email=aga@gmail.com, nif=12345678T, pollStCode=2, password=testPass]	Error message: Voter's NIF already in database
+[20160222_011631]:Error when inserting voter: Voter [name=testname, email=testemail, nif=testNIF, pollStCode=123, password=testPassword]	Error message: test
