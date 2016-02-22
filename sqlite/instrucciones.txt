@@ -5,3 +5,12 @@ Añadir (C:\sqlite) al path de windows o linux(google if necessary)
 Con el comando "sqlite3 asw.db" sin las comillas se abre la base de datos.
 Luego funciona como cualquier base normal con comandos SQL. 
 Eso si, todos los comando deben terminar en ; obliatoriamente, sino al dar enter simplemente cambia de linea.
+
+CREATE TABLE VOTERS(
+ID INT PRIMARY KEY,
+NAME TEXT NOT NULL,
+EMAIL TEXT NOT NULL,
+NIF TEXT UNIQUE NOT NULL,
+POLLING_STATION_NUMBER INT NOT NULL,
+PASSWORD TEXT NOT NULL
+);
